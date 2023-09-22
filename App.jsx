@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
+import { StyleSheet, Text, View } from "react-native";
 import HomeScreen from "./components/homescreen";
 import BottomNav from "./components/navigation/bottom-nav";
 

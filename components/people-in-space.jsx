@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function PeopleInSpace() {
 	const [peopleInSpace, setPeopleInSpace] = useState([]);
@@ -23,6 +23,15 @@ export default function PeopleInSpace() {
 			console.error(error);
 		}
 	};
+
+	const styles = StyleSheet.create({
+		container: {
+			flex: 1,
+			backgroundColor: "#fff",
+			alignItems: "center",
+			justifyContent: "center",
+		},
+	});
 
 	useEffect(() => {
 		getPeopleInSpace();
